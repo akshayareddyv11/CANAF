@@ -1,0 +1,27 @@
+---
+- name: CANAF baseline configuration
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Configure NTP
+      cisco.ios.ios_config:
+        lines:
+          - ntp server 10.1.1.10
+
+    - name: Configure logging
+      cisco.ios.ios_config:
+        lines:
+          - logging host 10.1.1.20
+
+    - name: Ensure SSH only on VTY
+      cisco.ios.ios_config:
+        lines:
+          - transport input ssh
+        parents:
+          - line vty 0 4
+
+    - name: Configure SNMPv3 group
+      cisco.ios.ios_config:
+        lines:
+          - snmp-server group CANAF-GROUP v3 priv

@@ -1,0 +1,44 @@
+[
+    {
+        "rule_id": "RULE001",
+        "rule_name": "No Telnet Allowed",
+        "severity": "high",
+        "status": "PASS",
+        "findings": []
+    },
+    {
+        "rule_id": "RULE002",
+        "rule_name": "AAA Must Be Enabled",
+        "severity": "high",
+        "status": "PASS",
+        "findings": []
+    },
+    {
+        "rule_id": "RULE003",
+        "rule_name": "NTP Must Be Configured",
+        "severity": "medium",
+        "status": "PASS",
+        "findings": []
+    },
+    {
+        "rule_id": "RULE004",
+        "rule_name": "Logging Must Be Configured",
+        "severity": "medium",
+        "status": "PASS",
+        "findings": []
+    },
+    {
+        "rule_id": "RULE005",
+        "rule_name": "SNMPv3 Must Be Used",
+        "severity": "high",
+        "status": "PASS",
+        "findings": []
+    },
+    {
+        "rule_id": "RULE006",
+        "rule_name": "SSH Required on VTY Lines",
+        "severity": "high",
+        "status": "PASS",
+        "findings": []
+    }
+]

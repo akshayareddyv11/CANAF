@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "ansible"
+		},
+		{
+			"path": "compliance"
+		},
+		{
+			"path": "dashboard"
+		},
+		{
+			"path": "docs"
+		},
+		{
+			"path": "screenshots"
+		},
+		{
+			"path": "tests"
+		},
+		{
+			"path": "venv"
+		}
+	]
+}

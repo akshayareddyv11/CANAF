@@ -1,0 +1,37 @@
+rules:
+  - id: RULE001
+    name: No Telnet Allowed
+    severity: high
+    forbidden:
+      - transport input telnet
+
+  - id: RULE002
+    name: AAA Must Be Enabled
+    severity: high
+    required:
+      - aaa new-model
+
+  - id: RULE003
+    name: NTP Must Be Configured
+    severity: medium
+    required:
+      - ntp server
+
+  - id: RULE004
+    name: Logging Must Be Configured
+    severity: medium
+    required:
+      - logging host
+
+  - id: RULE005
+    name: SNMPv3 Must Be Used
+    severity: high
+    required:
+      - snmp-server group
+      - v3
+
+  - id: RULE006
+    name: SSH Required on VTY Lines
+    severity: high
+    required:
+      - transport input ssh
